@@ -1747,35 +1747,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="P$1" x="-1.27" y="0" dx="1.9" dy="1.9" layer="1"/>
 <smd name="P$2" x="1.27" y="0" dx="1.9" dy="1.9" layer="1"/>
 </package>
-<package name="MICRO-SD-EBAY">
-<smd name="P$9" x="-10.035" y="5.7" dx="1.45" dy="2" layer="1" rot="R180"/>
-<smd name="P$10" x="3.565" y="5.7" dx="1.45" dy="2" layer="1" rot="R180"/>
-<smd name="P$11" x="3.565" y="-2.6" dx="1.45" dy="2" layer="1" rot="R180"/>
-<smd name="P$12" x="-10.035" y="-2.6" dx="1.45" dy="2" layer="1" rot="R180"/>
-<text x="0.1475" y="1.1" size="1" layer="21">1</text>
-<text x="-8.25" y="1.1" size="1" layer="21">8</text>
-<text x="-6.05" y="4.95" size="1" layer="21">microSD</text>
-<wire x1="3.565" y1="9.33" x2="-10.035" y2="9.33" width="0.127" layer="21"/>
-<wire x1="-10.035" y1="9.33" x2="-10.035" y2="7.15" width="0.127" layer="21"/>
-<wire x1="3.565" y1="9.33" x2="3.565" y2="7.15" width="0.127" layer="21"/>
-<wire x1="3.565" y1="4.4" x2="3.565" y2="-0.825" width="0.127" layer="21"/>
-<wire x1="-10.035" y1="4.4" x2="-10.035" y2="-0.825" width="0.127" layer="21"/>
-<wire x1="-10.035" y1="-0.825" x2="-9.835" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-9.835" y1="-1.1" x2="-9.835" y2="-1.375" width="0.127" layer="21"/>
-<wire x1="3.565" y1="-0.825" x2="3.365" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="3.365" y1="-1.1" x2="3.365" y2="-1.375" width="0.127" layer="21"/>
-<wire x1="-9.835" y1="-3.85" x2="-9.835" y2="-5.17" width="0.127" layer="21"/>
-<wire x1="3.365" y1="-3.85" x2="3.365" y2="-5.17" width="0.127" layer="21"/>
-<wire x1="-9.835" y1="-5.17" x2="3.365" y2="-5.17" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$2" x="-1.105" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$3" x="-2.21" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$4" x="-3.315" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$5" x="-4.42" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$6" x="-5.525" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$7" x="-6.63" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-<smd name="P$8" x="-7.735" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
-</package>
 </packages>
 </library>
 <library name="SparkFun-PowerIC">
@@ -1807,6 +1778,46 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors-EDITED">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints. EDITED by Brian Edmonson&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="MICRO-SD-EBAY">
+<smd name="9" x="-10.035" y="5.7" dx="1.45" dy="2" layer="1" rot="R180"/>
+<smd name="10" x="3.565" y="5.7" dx="1.45" dy="2" layer="1" rot="R180"/>
+<smd name="12" x="3.565" y="-2.6" dx="1.45" dy="2" layer="1" rot="R180"/>
+<smd name="11" x="-10.035" y="-2.6" dx="1.45" dy="2" layer="1" rot="R180"/>
+<text x="0.1475" y="1.1" size="1" layer="21">1</text>
+<text x="-8.25" y="1.1" size="1" layer="21">8</text>
+<text x="-6.05" y="4.95" size="1" layer="21">microSD</text>
+<wire x1="3.565" y1="9.33" x2="-10.035" y2="9.33" width="0.127" layer="21"/>
+<wire x1="-10.035" y1="9.33" x2="-10.035" y2="7.15" width="0.127" layer="21"/>
+<wire x1="3.565" y1="9.33" x2="3.565" y2="7.15" width="0.127" layer="21"/>
+<wire x1="3.565" y1="4.4" x2="3.565" y2="-0.825" width="0.127" layer="21"/>
+<wire x1="-10.035" y1="4.4" x2="-10.035" y2="-0.825" width="0.127" layer="21"/>
+<wire x1="-10.035" y1="-0.825" x2="-9.835" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-9.835" y1="-1.1" x2="-9.835" y2="-1.375" width="0.127" layer="21"/>
+<wire x1="3.565" y1="-0.825" x2="3.365" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="3.365" y1="-1.1" x2="3.365" y2="-1.375" width="0.127" layer="21"/>
+<wire x1="-9.835" y1="-3.85" x2="-9.835" y2="-5.17" width="0.127" layer="21"/>
+<wire x1="3.365" y1="-3.85" x2="3.365" y2="-5.17" width="0.127" layer="21"/>
+<wire x1="-9.835" y1="-5.17" x2="3.365" y2="-5.17" width="0.127" layer="21"/>
+<smd name="1" x="0" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.105" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-2.21" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-3.315" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="-4.42" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="-5.525" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="-6.63" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="8" x="-7.735" y="0" dx="1.5" dy="0.6" layer="1" rot="R90"/>
 </package>
 </packages>
 </library>
@@ -2048,13 +2059,33 @@ design rules under a new name.</description>
 <element name="R101" library="SparkFun-Passives" package="0805" value="1M" x="-3.81" y="-2.8575"/>
 <element name="C103" library="SparkFun-Passives" package="0805" value="22pF" x="-6.985" y="-2.8575"/>
 <element name="C108" library="SparkFun-Passives" package="0805" value="22pF" x="-10.16" y="-2.8575"/>
-<element name="U7" library="SparkFun-DigitalIC" package="SO016" value="74HC4050 LVL CONVERTER" x="54.9275" y="42.2275"/>
+<element name="U7" library="SparkFun-DigitalIC" package="SO016" value="74HC4050 LVL CONVERTER" x="47.3075" y="44.7675"/>
 <element name="C10" library="SparkFun-Passives" package="0805" value=".1uF" x="-13.335" y="-10.16"/>
 <element name="C11" library="SparkFun-Passives" package="0805" value=".1uF" x="-16.51" y="-10.16"/>
 <element name="C12" library="SparkFun-Passives" package="0805" value=".1uF" x="-19.685" y="-10.16"/>
 <element name="R10" library="rcl" package="R0805W" value="10K" x="-19.05" y="-15.24"/>
 <element name="C109" library="SparkFun-Capacitors" package="1206" value="1uF" x="-18.415" y="-20.0025"/>
-<element name="U$1" library="SparkFun-Connectors" package="MICRO-SD-EBAY" value="MICRO-SD-CARD-EBAY" x="-10.16" y="-31.75"/>
+<element name="J1" library="SparkFun-Connectors-EDITED" package="MICRO-SD-EBAY" value="MICRO-SD-CARD" x="68.58" y="40.64"/>
+<element name="R105" library="SparkFun-Passives" package="0805" value="100K" x="-22.86" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-22.86" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-22.86" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-22.86" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R102" library="SparkFun-Passives" package="0805" value="100K" x="-26.67" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-26.67" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-26.67" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-26.67" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R111" library="SparkFun-Passives" package="0805" value="100K" x="-30.48" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-30.48" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-30.48" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-30.48" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R110" library="SparkFun-Passives" package="0805" value="100K" x="-34.29" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -2099,17 +2130,22 @@ design rules under a new name.</description>
 <contactref element="USB1" pad="GND"/>
 <contactref element="C10" pad="2"/>
 <contactref element="C109" pad="2"/>
+<contactref element="J1" pad="6"/>
+<contactref element="J1" pad="9"/>
+<contactref element="J1" pad="10"/>
+<contactref element="J1" pad="12"/>
+<contactref element="J1" pad="11"/>
+<contactref element="R111" pad="1"/>
+<contactref element="R110" pad="1"/>
 <wire x1="77.0763" y1="8.255" x2="84.455" y2="23.745" width="0" layer="19" extent="1-1"/>
 <wire x1="60.1726" y1="21.99" x2="77.0763" y2="8.255" width="0" layer="19" extent="1-1"/>
 <wire x1="51.5874" y1="22.79" x2="60.1726" y2="21.99" width="0" layer="19" extent="1-1"/>
 <wire x1="51.5874" y1="21.19" x2="51.5874" y2="22.79" width="0" layer="19" extent="1-1"/>
-<wire x1="39.0525" y1="19.2375" x2="51.5874" y2="21.19" width="0" layer="19" extent="1-1"/>
-<wire x1="39.0525" y1="15.0525" x2="39.0525" y2="19.2375" width="0" layer="19" extent="1-1"/>
-<wire x1="37.5175" y1="27.94" x2="39.0525" y2="19.2375" width="0" layer="19" extent="1-1"/>
-<wire x1="39" y1="31" x2="37.5175" y2="27.94" width="0" layer="19" extent="1-1"/>
-<wire x1="41" y1="31" x2="39" y2="31" width="0" layer="19" extent="1-1"/>
-<wire x1="41.5" y1="31" x2="41" y2="31" width="0" layer="19" extent="1-1"/>
-<wire x1="42" y1="31" x2="41.5" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="42" y1="31" x2="51.5874" y2="22.79" width="0" layer="19" extent="1-1"/>
+<wire x1="41.5" y1="31" x2="42" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="41" y1="31" x2="41.5" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="39" y1="31" x2="41" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="37.5175" y1="27.94" x2="39" y2="31" width="0" layer="19" extent="1-1"/>
 <wire x1="31.8025" y1="28.8925" x2="37.5175" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="36" y1="36.5" x2="39" y2="31" width="0" layer="19" extent="1-1"/>
 <wire x1="38" y1="39.5" x2="36" y2="36.5" width="0" layer="19" extent="1-1"/>
@@ -2117,8 +2153,10 @@ design rules under a new name.</description>
 <wire x1="41.5" y1="39.5" x2="41" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="43" y1="39.5" x2="41.5" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="44.5" y1="37.5" x2="43" y2="39.5" width="0" layer="19" extent="1-1"/>
-<wire x1="39.4225" y1="43.815" x2="41" y2="39.5" width="0" layer="19" extent="1-1"/>
+<wire x1="39.4225" y1="43.815" x2="38" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="36.1425" y1="44.1325" x2="39.4225" y2="43.815" width="0" layer="19" extent="1-1"/>
+<wire x1="39.0525" y1="19.2375" x2="37.5175" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="39.0525" y1="15.0525" x2="39.0525" y2="19.2375" width="0" layer="19" extent="1-1"/>
 <wire x1="19.531" y1="36.1425" x2="31.8025" y2="28.8925" width="0" layer="19" extent="1-1"/>
 <wire x1="19.531" y1="38.0925" x2="19.531" y2="36.1425" width="0" layer="19" extent="1-1"/>
 <wire x1="19.531" y1="40.6925" x2="19.531" y2="38.0925" width="0" layer="19" extent="1-1"/>
@@ -2133,12 +2171,19 @@ design rules under a new name.</description>
 <wire x1="7.5675" y1="15.875" x2="12.6475" y2="15.875" width="0" layer="19" extent="1-1"/>
 <wire x1="11.9888" y1="6.8961" x2="12.6475" y2="15.875" width="0" layer="19" extent="1-1"/>
 <wire x1="19.25" y1="7.4075" x2="11.9888" y2="6.8961" width="0" layer="19" extent="1-1"/>
-<wire x1="59.3725" y1="39.4275" x2="51.5874" y2="21.19" width="0" layer="19" extent="1-1"/>
+<wire x1="51.7525" y1="41.9675" x2="44.5" y2="37.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-7.885" y1="-2.8575" x2="11.9888" y2="6.8961" width="0" layer="19" extent="1-1"/>
 <wire x1="-11.06" y1="-2.8575" x2="-7.885" y2="-2.8575" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.435" y1="-10.16" x2="-11.06" y2="-2.8575" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.61" y1="-10.16" x2="-12.435" y2="-10.16" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.015" y1="-20.0025" x2="-15.61" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="58.545" y1="46.34" x2="-17.015" y2="-20.0025" width="0" layer="19" extent="1-1"/>
+<wire x1="63.055" y1="40.64" x2="58.545" y2="46.34" width="0" layer="19" extent="1-1"/>
+<wire x1="58.545" y1="38.04" x2="63.055" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="72.145" y1="38.04" x2="63.055" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="72.145" y1="46.34" x2="72.145" y2="38.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.38" y1="-34.29" x2="58.545" y2="38.04" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.19" y1="-34.29" x2="-31.38" y2="-34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="R1" pad="1"/>
@@ -2245,9 +2290,13 @@ design rules under a new name.</description>
 </signal>
 <signal name="GPIO1">
 <contactref element="U6" pad="34"/>
+<contactref element="R110" pad="2"/>
+<wire x1="-33.39" y1="-34.29" x2="44.5" y2="37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GPIO0">
 <contactref element="U6" pad="33"/>
+<contactref element="R111" pad="2"/>
+<wire x1="-29.58" y1="-34.29" x2="44.5" y2="36.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U6" pad="9"/>
@@ -2294,9 +2343,13 @@ design rules under a new name.</description>
 <contactref element="C10" pad="1"/>
 <contactref element="U7" pad="1"/>
 <contactref element="U6" pad="32"/>
+<contactref element="J1" pad="4"/>
+<contactref element="R105" pad="2"/>
+<contactref element="R102" pad="2"/>
+<wire x1="44.5" y1="36" x2="42.8625" y2="41.9675" width="0" layer="19" extent="1-1"/>
+<wire x1="42.5" y1="39.5" x2="44.5" y2="36" width="0" layer="19" extent="1-1"/>
 <wire x1="40" y1="39.5" x2="42.5" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="39" y1="39.5" x2="40" y2="39.5" width="0" layer="19" extent="1-1"/>
-<wire x1="44.5" y1="36" x2="42.5" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="36" y1="35.5" x2="39" y2="39.5" width="0" layer="19" extent="1-1"/>
 <wire x1="38" y1="31" x2="36" y2="35.5" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="31" x2="38" y2="31" width="0" layer="19" extent="1-1"/>
@@ -2306,8 +2359,10 @@ design rules under a new name.</description>
 <wire x1="2.2225" y1="22.86" x2="5.791" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="5.7675" y1="15.875" x2="5.791" y2="22.86" width="0" layer="19" extent="1-1"/>
 <wire x1="11.9888" y1="11.5189" x2="5.7675" y2="15.875" width="0" layer="19" extent="1-1"/>
-<wire x1="50.4825" y1="39.4275" x2="40.5" y2="31" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.235" y1="-10.16" x2="5.7675" y2="15.875" width="0" layer="19" extent="1-1"/>
+<wire x1="65.265" y1="40.64" x2="-14.235" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.96" y1="-34.29" x2="65.265" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.77" y1="-34.29" x2="-21.96" y2="-34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="1.8V">
 <contactref element="U6" pad="31"/>
@@ -2389,30 +2444,38 @@ design rules under a new name.</description>
 <signal name="MP3-RST">
 <contactref element="U7" pad="15"/>
 <contactref element="U6" pad="3"/>
-<wire x1="51.7525" y1="45.0275" x2="36" y2="37" width="0" layer="19" extent="1-1"/>
+<contactref element="R105" pad="1"/>
+<wire x1="36" y1="37" x2="44.1325" y2="47.5675" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.76" y1="-34.29" x2="36" y2="37" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MP3-DCS">
 <contactref element="U7" pad="12"/>
 <contactref element="U6" pad="13"/>
-<wire x1="55.5625" y1="45.0275" x2="37.5" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="47.9425" y1="47.5675" x2="37.5" y2="31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MP3-CS">
 <contactref element="U7" pad="10"/>
 <contactref element="U6" pad="23"/>
-<wire x1="58.1025" y1="45.0275" x2="42.5" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="50.4825" y1="47.5675" x2="42.5" y2="31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="U7" pad="6"/>
 <contactref element="U6" pad="28"/>
-<wire x1="56.8325" y1="39.4275" x2="44.5" y2="34" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="5"/>
+<wire x1="44.5" y1="34" x2="49.2125" y2="41.9675" width="0" layer="19" extent="1-1"/>
+<wire x1="64.16" y1="40.64" x2="44.5" y2="34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SD-CS">
 <contactref element="U7" pad="4"/>
+<contactref element="J1" pad="2"/>
+<wire x1="67.475" y1="40.64" x2="46.6725" y2="41.9675" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="U7" pad="2"/>
 <contactref element="U6" pad="29"/>
-<wire x1="51.7525" y1="39.4275" x2="44.5" y2="34.5" width="0" layer="19" extent="1-1"/>
+<contactref element="J1" pad="3"/>
+<wire x1="44.5" y1="34.5" x2="44.1325" y2="41.9675" width="0" layer="19" extent="1-1"/>
+<wire x1="66.37" y1="40.64" x2="44.5" y2="34.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS">
 <contactref element="U2" pad="11"/>
@@ -2440,11 +2503,15 @@ design rules under a new name.</description>
 </signal>
 <signal name="MIDI-RX">
 <contactref element="U6" pad="26"/>
+<contactref element="R102" pad="1"/>
+<wire x1="-27.57" y1="-34.29" x2="44.5" y2="33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
 <contactref element="U6" pad="30"/>
 <contactref element="U1" pad="16"/>
+<contactref element="J1" pad="7"/>
 <wire x1="58.68" y1="17.2974" x2="44.5" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="61.95" y1="40.64" x2="58.68" y2="17.2974" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MP3-DREQ">
 <contactref element="U6" pad="8"/>
