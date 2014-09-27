@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7910,7 +7910,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C103" library="SparkFun-Passives" deviceset="CAP" device="0805" value="22pF"/>
 <part name="C108" library="SparkFun-Passives" deviceset="CAP" device="0805" value="22pF"/>
 <part name="U7" library="SparkFun-DigitalIC" deviceset="HEX_CONVERTER" device="" value="74HC4050 LVL CONVERTER"/>
-<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C110" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="C11" library="SparkFun-Passives" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="SUPPLY33" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY37" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -7962,10 +7962,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="ROUND" value=""/>
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
-<part name="R106" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R107" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="C8" library="SparkFun-Passives" deviceset="CAP_POL" device="G"/>
-<part name="C9" library="SparkFun-Passives" deviceset="CAP_POL" device="G"/>
+<part name="R121" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R120" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="C101" library="SparkFun-Passives" deviceset="CAP_POL" device="G" value="220uF"/>
+<part name="C102" library="SparkFun-Passives" deviceset="CAP_POL" device="G" value="220uF"/>
+<part name="R109" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10"/>
+<part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0805" value="47nF"/>
+<part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R107" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20"/>
+<part name="R106" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="20"/>
+<part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10nF"/>
+<part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0805" value="10nF"/>
+<part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8837,7 +8846,7 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <attribute name="NAME" x="59.69" y="44.45" size="1.778" layer="95"/>
 <attribute name="VALUE" x="38.1" y="20.32" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="C10" gate="G$1" x="29.21" y="30.48" smashed="yes">
+<instance part="C110" gate="G$1" x="29.21" y="30.48" smashed="yes">
 <attribute name="NAME" x="30.734" y="33.401" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.734" y="28.321" size="1.778" layer="96" font="vector"/>
 </instance>
@@ -8923,16 +8932,55 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <instance part="GND25" gate="1" x="261.62" y="30.48" smashed="yes">
 <attribute name="VALUE" x="259.08" y="27.94" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="R106" gate="G$1" x="157.48" y="127" smashed="yes" rot="R180">
-<attribute name="NAME" x="153.67" y="128.4986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.67" y="123.698" size="1.778" layer="96"/>
+<instance part="R121" gate="G$1" x="203.2" y="121.92" smashed="yes" rot="R180">
+<attribute name="NAME" x="200.66" y="123.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="200.66" y="118.11" size="1.778" layer="96"/>
 </instance>
-<instance part="R107" gate="G$1" x="157.48" y="134.62" smashed="yes">
-<attribute name="NAME" x="153.67" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.67" y="131.318" size="1.778" layer="96"/>
+<instance part="R120" gate="G$1" x="203.2" y="132.08" smashed="yes">
+<attribute name="NAME" x="200.66" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="200.66" y="128.27" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="170.18" y="134.62" rot="R90"/>
-<instance part="C9" gate="G$1" x="170.18" y="127" rot="R90"/>
+<instance part="C101" gate="G$1" x="213.36" y="132.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.17" y="133.35" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="129.54" size="1.778" layer="96"/>
+</instance>
+<instance part="C102" gate="G$1" x="213.36" y="121.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.17" y="123.19" size="1.778" layer="95"/>
+<attribute name="VALUE" x="217.17" y="118.11" size="1.778" layer="96"/>
+</instance>
+<instance part="R109" gate="G$1" x="162.56" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="165.1" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.1" y="116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="C8" gate="G$1" x="162.56" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="165.1" y="111.76" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="165.1" y="109.22" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND26" gate="1" x="162.56" y="104.14" smashed="yes">
+<attribute name="VALUE" x="160.02" y="101.6" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="R107" gate="G$1" x="187.96" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="190.5" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.5" y="116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="R106" gate="G$1" x="175.26" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="177.8" y="119.38" size="1.778" layer="95"/>
+<attribute name="VALUE" x="177.8" y="116.84" size="1.778" layer="96"/>
+</instance>
+<instance part="C9" gate="G$1" x="175.26" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="177.8" y="111.76" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="177.8" y="109.22" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="C10" gate="G$1" x="187.96" y="111.76" smashed="yes" rot="R180">
+<attribute name="NAME" x="190.5" y="111.76" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="190.5" y="109.22" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND27" gate="1" x="175.26" y="104.14" smashed="yes">
+<attribute name="VALUE" x="172.72" y="101.6" size="1.778" layer="96" font="vector"/>
+</instance>
+<instance part="GND28" gate="1" x="187.96" y="104.14" smashed="yes">
+<attribute name="VALUE" x="185.42" y="101.6" size="1.778" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9010,7 +9058,7 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <wire x1="78.74" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="2"/>
+<pinref part="C110" gate="G$1" pin="2"/>
 <wire x1="29.21" y1="25.4" x2="29.21" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
@@ -9052,6 +9100,18 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <pinref part="GND25" gate="1" pin="GND"/>
 <pinref part="R110" gate="G$1" pin="1"/>
 <wire x1="261.62" y1="33.02" x2="261.62" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -9175,7 +9235,7 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <pinref part="SUPPLY15" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="C110" gate="G$1" pin="1"/>
 <wire x1="29.21" y1="45.72" x2="29.21" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="SUPPLY37" gate="G$1" pin="3.3V"/>
 </segment>
@@ -9349,28 +9409,35 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <net name="GBUF" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="GBUF"/>
-<wire x1="124.46" y1="127" x2="139.7" y2="127" width="0.1524" layer="91"/>
 <label x="132.08" y="127" size="1.778" layer="95"/>
+<wire x1="124.46" y1="127" x2="162.56" y2="127" width="0.1524" layer="91"/>
+<pinref part="R109" gate="G$1" pin="2"/>
+<wire x1="162.56" y1="124.46" x2="162.56" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RIGHT" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="RIGHT"/>
-<wire x1="124.46" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="129.54" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
 <label x="132.08" y="129.54" size="1.778" layer="95"/>
-<wire x1="147.32" y1="129.54" x2="147.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="129.54" x2="198.12" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="129.54" x2="198.12" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="R121" gate="G$1" pin="2"/>
 <pinref part="R106" gate="G$1" pin="2"/>
-<wire x1="147.32" y1="127" x2="152.4" y2="127" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="124.46" x2="175.26" y2="129.54" width="0.1524" layer="91"/>
+<junction x="175.26" y="129.54"/>
 </segment>
 </net>
 <net name="LEFT" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="LEFT"/>
-<wire x1="124.46" y1="132.08" x2="147.32" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="124.46" y1="132.08" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
 <label x="132.08" y="132.08" size="1.778" layer="95"/>
-<wire x1="147.32" y1="132.08" x2="147.32" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R107" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="134.62" x2="152.4" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="132.08" x2="198.12" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R120" gate="G$1" pin="1"/>
+<pinref part="R107" gate="G$1" pin="2"/>
+<wire x1="187.96" y1="124.46" x2="187.96" y2="132.08" width="0.1524" layer="91"/>
+<junction x="187.96" y="132.08"/>
 </segment>
 </net>
 <net name="MIDI-RX" class="0">
@@ -9410,6 +9477,52 @@ Notes:  Filter caps near other parts are on those parts' respective sheets.</des
 <pinref part="U6" gate="G$1" pin="RCAP"/>
 <wire x1="124.46" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C109" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R120" gate="G$1" pin="2"/>
+<pinref part="C101" gate="G$1" pin="+"/>
+<wire x1="208.28" y1="132.08" x2="210.82" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="R121" gate="G$1" pin="1"/>
+<pinref part="C102" gate="G$1" pin="+"/>
+<wire x1="210.82" y1="121.92" x2="208.28" y2="121.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LEFT-OUT" class="0">
+<segment>
+<pinref part="C101" gate="G$1" pin="-"/>
+<wire x1="218.44" y1="132.08" x2="238.76" y2="132.08" width="0.1524" layer="91"/>
+<label x="226.06" y="132.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RIGHT-OUT" class="0">
+<segment>
+<pinref part="C102" gate="G$1" pin="-"/>
+<wire x1="218.44" y1="121.92" x2="238.76" y2="121.92" width="0.1524" layer="91"/>
+<label x="226.06" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="R109" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="R106" gate="G$1" pin="1"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="R107" gate="G$1" pin="1"/>
+<pinref part="C10" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

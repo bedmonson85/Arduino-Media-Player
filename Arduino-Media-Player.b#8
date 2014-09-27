@@ -32,8 +32,8 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -2008,8 +2008,6 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="BAT1" library="sn2032" package="SN2032" value="CR2032" x="84.455" y="29.845"/>
-<element name="R1" library="rcl" package="R0805W" value="4K7" x="55.245" y="32.385" rot="R90"/>
-<element name="R2" library="rcl" package="R0805W" value="4K7" x="57.785" y="32.385" rot="R90"/>
 <element name="U1" library="SparkFun-DigitalIC" package="TQFP32-08" value="ATMEGA328P" x="55.88" y="21.59">
 <attribute name="PROD_ID" value="IC-09069" x="55.88" y="21.59" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="ATMEGA328P" x="55.88" y="21.59" size="1.778" layer="27" display="off"/>
@@ -2063,7 +2061,6 @@ design rules under a new name.</description>
 <element name="C10" library="SparkFun-Passives" package="0805" value=".1uF" x="-13.335" y="-10.16"/>
 <element name="C11" library="SparkFun-Passives" package="0805" value=".1uF" x="-16.51" y="-10.16"/>
 <element name="C12" library="SparkFun-Passives" package="0805" value=".1uF" x="-19.685" y="-10.16"/>
-<element name="R10" library="rcl" package="R0805W" value="10K" x="-19.05" y="-15.24"/>
 <element name="C109" library="SparkFun-Capacitors" package="1206" value="1uF" x="-18.415" y="-20.0025"/>
 <element name="J1" library="SparkFun-Connectors-EDITED" package="MICRO-SD-EBAY" value="MICRO-SD-CARD" x="68.58" y="40.64"/>
 <element name="R105" library="SparkFun-Passives" package="0805" value="100K" x="-22.86" y="-34.29">
@@ -2085,6 +2082,21 @@ design rules under a new name.</description>
 <attribute name="DESIGNER" value="Drawn By:  BJE" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
 <attribute name="CNAME" value="Arduino Media Player" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
 <attribute name="CREVISION" value="A" x="-34.29" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R5" library="SparkFun-Passives" package="0805" value="10K" x="-38.1" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-38.1" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-38.1" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-38.1" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R1" library="SparkFun-Passives" package="0805" value="4K7" x="-41.91" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-41.91" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-41.91" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-41.91" y="-34.29" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R2" library="SparkFun-Passives" package="0805" value="4K7" x="-45.72" y="-34.29">
+<attribute name="DESIGNER" value="Drawn By:  BJE" x="-45.72" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CNAME" value="Arduino Media Player" x="-45.72" y="-34.29" size="1.778" layer="27" display="off"/>
+<attribute name="CREVISION" value="A" x="-45.72" y="-34.29" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -2186,18 +2198,18 @@ design rules under a new name.</description>
 <wire x1="-35.19" y1="-34.29" x2="-31.38" y2="-34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
-<contactref element="R1" pad="1"/>
 <contactref element="U1" pad="28"/>
 <contactref element="U3" pad="6"/>
-<wire x1="55.245" y1="31.3325" x2="82.3087" y2="9.525" width="0" layer="19" extent="1-1"/>
-<wire x1="56.28" y1="25.8826" x2="55.245" y2="31.3325" width="0" layer="19" extent="1-1"/>
+<contactref element="R1" pad="1"/>
+<wire x1="56.28" y1="25.8826" x2="82.3087" y2="9.525" width="0" layer="19" extent="1-1"/>
+<wire x1="-42.81" y1="-34.29" x2="56.28" y2="25.8826" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SDA">
-<contactref element="R2" pad="1"/>
 <contactref element="U1" pad="27"/>
 <contactref element="U3" pad="5"/>
-<wire x1="57.785" y1="31.3325" x2="82.3087" y2="8.255" width="0" layer="19" extent="1-1"/>
-<wire x1="57.08" y1="25.8826" x2="57.785" y2="31.3325" width="0" layer="19" extent="1-1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="57.08" y1="25.8826" x2="82.3087" y2="8.255" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.62" y1="-34.29" x2="57.08" y2="25.8826" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DS1307X2">
 <contactref element="XTAL2" pad="X1"/>
@@ -2391,8 +2403,6 @@ design rules under a new name.</description>
 <contactref element="C3" pad="1"/>
 <contactref element="R3" pad="2"/>
 <contactref element="R4" pad="2"/>
-<contactref element="R1" pad="2"/>
-<contactref element="R2" pad="2"/>
 <contactref element="U1" pad="6"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="18"/>
@@ -2400,13 +2410,13 @@ design rules under a new name.</description>
 <contactref element="U3" pad="8"/>
 <contactref element="R8" pad="1"/>
 <contactref element="C11" pad="1"/>
-<contactref element="R10" pad="2"/>
+<contactref element="R5" pad="2"/>
+<contactref element="R1" pad="2"/>
+<contactref element="R2" pad="2"/>
 <wire x1="60.1726" y1="19.59" x2="82.3087" y2="12.065" width="0" layer="19" extent="1-1"/>
 <wire x1="60.1726" y1="21.19" x2="60.1726" y2="19.59" width="0" layer="19" extent="1-1"/>
 <wire x1="51.5874" y1="20.39" x2="60.1726" y2="19.59" width="0" layer="19" extent="1-1"/>
 <wire x1="51.5874" y1="21.99" x2="51.5874" y2="20.39" width="0" layer="19" extent="1-1"/>
-<wire x1="55.245" y1="33.4375" x2="51.5874" y2="21.99" width="0" layer="19" extent="1-1"/>
-<wire x1="57.785" y1="33.4375" x2="55.245" y2="33.4375" width="0" layer="19" extent="1-1"/>
 <wire x1="33.6025" y1="28.8925" x2="51.5874" y2="21.99" width="0" layer="19" extent="1-1"/>
 <wire x1="28.475" y1="25.0825" x2="33.6025" y2="28.8925" width="0" layer="19" extent="1-1"/>
 <wire x1="27.2525" y1="33.655" x2="33.6025" y2="28.8925" width="0" layer="19" extent="1-1"/>
@@ -2416,7 +2426,9 @@ design rules under a new name.</description>
 <wire x1="9.79" y1="43.4975" x2="12.219" y2="40.6925" width="0" layer="19" extent="1-1"/>
 <wire x1="11.9888" y1="25.1714" x2="19.531" y2="37.4425" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.41" y1="-10.16" x2="11.9888" y2="25.1714" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.9975" y1="-15.24" x2="-17.41" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.2" y1="-34.29" x2="-17.41" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.01" y1="-34.29" x2="-37.2" y2="-34.29" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.82" y1="-34.29" x2="-41.01" y2="-34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SQW">
 <contactref element="U3" pad="7"/>
@@ -2483,9 +2495,9 @@ design rules under a new name.</description>
 <signal name="/RESET">
 <contactref element="C12" pad="2"/>
 <contactref element="U1" pad="29"/>
-<contactref element="R10" pad="1"/>
+<contactref element="R5" pad="1"/>
 <wire x1="-18.785" y1="-10.16" x2="55.48" y2="25.8826" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.1025" y1="-15.24" x2="-18.785" y2="-10.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-39" y1="-34.29" x2="-18.785" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RCAP">
 <contactref element="U6" pad="44"/>
